@@ -1,3 +1,12 @@
-<h1>
-  {{title}}
-</h1>
+<td-layout-nav-list logo='tlogo' toolbarTitle="Covalent" [opened]="true">
+  <md-nav-list td-sidenav-content>
+    <a md-list-item style="background-color:red">A list item</a>
+  </md-nav-list>
+  <div td-toolbar-content>Content</div>
+  <md-card>
+    <md-card-title>Issue demo</md-card-title>   
+    <md-card-content>
+      Note that the icon automatically resizes to a width of 100px, regardless of whether or not it will stay in bounds of the toolbar. Ideally, the logo should have a maximum height. Even better, the nav list left toolbar area should be able to include arbitrary content as opposed to just a few hard-coded slots.
+    </md-card-content>
+  </md-card>
+</td-layout-nav-list>
